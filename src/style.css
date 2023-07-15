@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  font-family: "Karla", sans-serif;
+  background-color: #f5f7fb;
+  background-image: url(../public/top.png), url(../public/bottom.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 0%, left 100%;
+}
+
+.Home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.Home .title {
+  font-size: 31px;
+  font-weight: 700;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #293264;
+  margin-bottom: 0;
+}
+
+.Home .paragraph {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #293264;
+}
+
+.Home .btn {
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  margin-top: 16px;
+  width: 180px;
+  height: 45px;
+  border-radius: 15px;
+  background: #4d5b9e;
+  color: #f5f7fb;
+  border: none;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+.Home .btn:hover {
+  background: #293264;
+  transition-duration: 0.3s;
+}
+
+.Quiz {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+
+.Question .question {
+  font-family: Karla;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: #293264;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+label {
+  cursor: pointer;
+  padding: 3px 12px;
+  border-radius: 8px;
+  border: 0.79px solid #4d5b9e;
+  color: #293264;
+  margin: 10px;
+}
+
+input[type="radio"]:checked + label {
+  background: #d6dbf5;
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+}
+
+hr {
+  border: 1px solid #dbdef0;
+}
+
+.Quiz .btn {
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  margin-top: 16px;
+  padding: 3px 12px;
+  border-radius: 15px;
+  background: #4d5b9e;
+  color: #f5f7fb;
+  border: none;
+  cursor: pointer;
+  transition-duration: 0.3s;
+  width: 180px;
+  height: 45px;
+}
+
+.Quiz .btn:hover {
+  background: #293264;
+  transition-duration: 0.3s;
+}
+
+.score {
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #293264;
+  margin-top: 20px;
+}
